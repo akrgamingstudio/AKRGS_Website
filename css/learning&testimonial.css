@@ -1,0 +1,215 @@
+/* Learning Section Styling */
+.learning-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 40px; /* Adds space to left and right */
+    background-color: #ffffff;
+    position: relative;
+    gap: 20px;
+    max-width: 1450px; /* Limits the width of the section */
+    margin: 0 auto; /* Centers the section on the page */
+}
+
+
+/* Header Section */
+.learning-header {
+    width: 40%; /* Left column for header */
+    text-align: left;
+}
+
+.learning-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    line-height: 1.3;
+    color: #1a1a1a;
+}
+
+.learning-header .highlight {
+    color: #4e54c8; /* Purple highlight for titles */
+}
+
+.learning-header .description {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Cards Section */
+.learning-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 55%; /* Right column for cards */
+}
+
+/* Individual Learning Card */
+.learning-card {
+    background: #f9faff; /* Light background color */
+    border: 1px solid #e0e6ed; /* Subtle border */
+    border-radius: 20px; /* Rounded corners */
+    padding: 30px;
+    text-align: center;
+    width: 48%; /* Width for each card */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for Cards */
+.learning-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Card Icon */
+.card-icon img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Card Title */
+.learning-card h3 {
+    font-size: 1.3rem;
+    color: #4e54c8;
+    margin-bottom: 15px;
+}
+
+/* Card Description */
+.learning-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Globe Image */
+.globe-image {
+    position: absolute;
+    bottom: -100px; /* Moves the globe below the layout */
+    right: 10px; /* Aligns it to the right */
+    z-index: 1;
+}
+
+.globe-image img {
+    width: 200px;
+    height: auto;
+    opacity: 0.9; /* Slight transparency for a subtle effect */
+}
+
+/* Responsive Design for Learning Section */
+@media (max-width: 768px) {
+    .learning-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .learning-header {
+        width: 100%;
+    }
+
+    .learning-cards {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .learning-card {
+        width: 90%;
+    }
+
+    .globe-image img {
+        width: 100px;
+    }
+        /* Globe Image */
+    .globe-image {
+        position: absolute;
+        bottom: -50px; /* Moves the globe below the layout */
+        right: 10px; /* Aligns it to the right */
+        z-index: 1;
+    }
+
+    .globe-image img {
+        width: 300px;
+        height: auto;
+        opacity: 0.9; /* Slight transparency for a subtle effect */
+    }
+}
+
+/* Testimonial Section Styling */
+.testimonial-section {
+    padding: 50px 20px;
+    background: linear-gradient(to right, #480A5E 0%, #1F5BEA 100%);
+    text-align: center;
+    color: #ffffff;
+}
+
+.testimonial-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.testimonial-section .highlight {
+    color: #ffe455; /* Gold color */
+}
+
+.testimonial-section .description {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 40px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Testimonial Grid */
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Always show 3 columns */
+    gap: 10px;
+    justify-items: center;
+}
+
+.testimonial-card {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 70%;
+    text-align: left;
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.testimonial-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.testimonial-card span {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .learning-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .learning-card {
+        width: 90%;
+    }
+
+    .globe-image img {
+        width: 80px; /* Smaller globe on mobile */
+    }
+
+    .testimonial-grid {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+}

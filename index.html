@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AugMEnt - Immersive Experiences</title>
+    <link rel="stylesheet" href="./css/navbar.css" >
+    <link rel="stylesheet" href="./css/videosection.css" >
+    <link rel="stylesheet" href="./css/contenthero.css" >
+    <link rel="stylesheet" href="./css/specaialsection.css" >
+    <link rel="stylesheet" href="./css/corosal.css" >
+    <link rel="stylesheet" href="./css/innovation.css" >
+    <link rel="stylesheet" href="./css/learning&testimonial.css" >
+    <link rel="stylesheet" href="./css/join&download.css" >
+    <link rel="stylesheet" href="./css/faq&footer.css" >
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  />
+  <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', Arial, sans-serif; /* Updated font-family */
+
+        }
+
+        body {
+            font-family: 'Poppins', Arial, sans-serif; /* Updated font-family */
+            overflow: auto;
+        }
+
+        /* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Slight downward movement */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation classes */
+.animate {
+    opacity: 0; /* Start invisible */
+    transform: translateY(20px); /* Start with a downward movement */
+    transition: opacity 1s ease, transform 0.6s ease; /* Smooth transition */
+}
+
+.animate.visible {
+    opacity: 1;
+    transform: translateY(0); /* Reset transform when visible */
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-black fixed-top">
+        <div class="container-fluid">
+            <!-- Logo on the Left -->
+            <a class="navbar-brand" href="#">
+                <img src="./Images/navbar logo.jpg" alt="AugMEnt Logo" height="40">
+            </a>
+    
+            <!-- Hamburger Menu for Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Collapsible Menu -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-md-0"> <!-- mx-auto centers the links -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#special-section">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq-section">FAQ's</a>
+                    </li>
+                </ul>
+    
+                <!-- Button on the Right -->
+                <div class="ms-md-3">
+                    <a href="#" class="btn btn-outline-light">Begin my Adventure!</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="video-container animate">
+        <video id="background-video" autoplay muted loop>
+            <source src="./3209828-uhd_3840_2160_25fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- <div class="center-image">
+            <img src="your-centered-image.png" alt="Centered Image" />
+        </div> -->
+
+        <!-- <div class="center-text">
+            <h1>A Visionary Product</h1>
+            <p>to discover the social era with Immersive experiences.</p>
+        </div> -->
+
+        <button id="mute-btn" class="mute-button">Unmute</button>
+    </div>
+
+    <div class="content-section animate">
+        <div class="text-content">
+            <h2>"Shaping the Future of <span style="color: blue;">Learning and Creativity</span>"</h2>
+            <p>AugMEnt - The Future Canvas, a groundbreaking creation by AKR Gaming Studio, is a next-generation AR platform redefining learning and creativity for users of all ages. Designed to deliver immersive experiences and intuitive functionality, AugMEnt transforms how users engage with educational content, combining innovation with a secure and inspiring digital environment.</p>
+            <p>With tools to create interactive AR projects, collaborate with peers, and explore a wealth of knowledge, AugMEnt fosters creativity, critical thinking, and problem-solving. Its seamless design ensures an engaging experience for learners, educators, and parents alike. Built on AKR Gaming Studio’s expertise in AR technology, AugMEnt sets a new standard for educational and social platforms, empowering users to connect, learn, and grow in a dynamic digital space.</p>
+        </div>
+        <div class="image-content">
+            <img src="./Images/Content Image.jpg" alt="AugMEnt Creativity Image">
+        </div>
+    </div>
+
+   <!-- What Makes AugMEnt Special Section -->
+   <div id="special-section" class="special-section animate">
+    <h2>What Makes <span>AugMEnt</span> Special?</h2>
+    <p>Experience the power of AugMEnt's cutting-edge AR technology, offering safe, immersive, and creative learning opportunities for users of all ages.</p>
+
+    <div class="features">
+        <div class="feature">
+            <div class="text-content">
+                <h3>Save and Secure Environment</h3>
+                <p>Our robust content moderation and kid-friendly policies ensure a safe digital space, free from inappropriate content and harmful interactions.</p>
+            </div>
+            <img src="./Images/Speciality 1.png" alt="Safe Environment">
+        </div>
+
+        <div class="feature">
+            <img src="./Images/Speciality 2.png" alt="Social Learning">
+            <div class="text-content">
+                <h3>Social Learning</h3>
+                <p>AugMEnt fosters collaboration through safe social features, where kids can share their creations and learn—all under strict supervision to maintain a safe environment.</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="text-content">
+                <h3>Parental Controls and Monitoring</h3>
+                <p>Parents can permit their child’s activity and engagement, providing peace of mind and fostering responsible digital habits.</p>
+            </div>
+            <img src="./Images/Speciality 3.png" alt="Parental Controls">
+        </div>
+
+        <div class="feature">
+            <img src="./Images/Speciality 4.png" alt="Zero Tolerance">
+            <div class="text-content">
+                <h3>Zero Tolerance for Harmful Content</h3>
+                <p>Unlike other platforms, AugMEnt enforces strict policies against inappropriate material, ensuring a positive experience for all users.</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="text-content">
+                <h3>Gamified Learning Experience</h3>
+                <p>Educational games and interactive quizzes make learning enjoyable, motivating kids to explore and retain new knowledge.</p>
+            </div>
+            <img src="./Images/Speciality 5.png" alt="Gamified Learning">
+        </div>
+    </div>
+
+    <img src="./Images/089_Taj_Mahal_1000_0001-removebg-preview 1.png" alt="Taj Mahal" class="tajmahal-img">
+
+</div>
+
+    <!-- Corosal Section -->
+    <div id="ar-carousel" class="swiper-container animate">
+        <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+                <h2>Your Gateway to Limitless <span style="color: #4169E1;">AR Adventures</span></h2>
+                <p>Dive into the future of social media with AR-driven content that inspires creativity, learning, and connections. Share, explore, and experience like never before.</p>
+                <img src="./Images/corasal1.png" alt="Slide 1">
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+                <h2>Your Title for Slide 2</h2>
+                <p>Your description for Slide 2 goes here.</p>
+                <img src="./Images/corosal2.jpg" alt="Slide 2">
+            </div>
+        </div>
+    
+        <!-- Overlay Image -->
+        <img src="./Images/corosaloverlay.png" alt="Overlay Image" class="static-overlay-image">
+    
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    
+    <!-- Innovation Section -->
+    <div class="innovation-section animate">
+        <h2>"<span class="highlight">Fostering Innovation</span> and Social Learning"</h2>
+        <p class="description">
+            AugMEnt combines creative AR features with safe social interactions, allowing kids to develop key skills while sharing and collaborating with peers.
+        </p>
+    
+        <div class="features-container">
+            <!-- Feature 1 -->
+            <div class="feature-box">
+                <h3>Kid-Friendly, Intuitive Interface</h3>
+                <p>
+                    Designed with children in mind, the app features a simple, visually appealing interface that makes navigation easy. Kids can independently explore, learn, and create without needing adult assistance.
+                </p>
+                <img src="./Images/feature1.png" alt="Kid-Friendly Icon" class="feature-icon">
+            </div>
+    
+            <!-- Feature 2 -->
+            <div class="feature-box">
+                <h3>Regular Updates and Fresh Content</h3>
+                <p>
+                    AugMEnt continuously updates its library with new educational content, activities, and AR features, keeping the learning experience fresh, exciting, and aligned with the latest educational standards.
+                </p>
+                <img src="./Images/feature2.png" alt="Regular Updates Icon" class="feature-icon">
+            </div>
+    
+            <!-- Feature 3 -->
+            <div class="feature-box">
+                <h3>Inspiring Creativity & Problem-Solving</h3>
+                <p>
+                    By enabling kids to create their own AR experiences, AugMEnt inspires critical thinking, problem-solving, and creativity, helping them develop essential skills for the future.
+                </p>
+                <img src="./Images/feature3.png" alt="Creativity Icon" class="feature-icon">
+            </div>
+        </div>
+        <img src="./images/4-removebg-preview 1.png" alt="Hands Holding Globe" class="additional-image">
+    </div>
+    
+    <!-- Learning Section -->
+    <div class="learning-section animate">
+        <!-- Top Section: Creative Learning Made Easy -->
+        <div class="learning-header">
+            <h2>
+                <span class="highlight">Creative Learning</span> Made Easy
+            </h2>
+            <p class="description">
+                AugMent offers an immersive AR Social App for kids and others to explore, create, and connect, developing critical thinking and collaboration skills in an engaging way.
+            </p>
+        </div>
+
+        <div class="learning-cards">
+            <!-- Card 1 -->
+            <div class="learning-card">
+                <div class="card-icon">
+                    <img src="./Images/learning1.png" alt="Explore Content Icon">
+                </div>
+                <h3>Explore Content by Categories</h3>
+                <p>
+                    Easily explore a wide range of content organized by categories, find educational tutorials, complete projects, and maximize experiences tailored to your interests.
+                </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="learning-card">
+                <div class="card-icon">
+                    <img src="./Images/learning2.png" alt="Data-Driven Decisions Icon">
+                </div>
+                <h3>Data-Driven Decisions at Your Fingertips</h3>
+                <p>
+                    With AugMent's rich analytics, easily track user progress and content impact to make strategic decisions and meet the platform’s measurable educational goals.
+                </p>
+            </div>
+        </div>
+
+        <!-- Globe Image -->
+        <div class="globe-image">
+            <img src="./Images/Planets AR Logo Transparent v2 1.png" alt="Earth Globe">
+        </div>
+    </div>
+
+    <!-- Testimonial Section -->
+    <div class="testimonial-section animate">
+        <h2>
+            "Trusted by <span class="highlight">Parents and Educators</span>"
+        </h2>
+        <p class="description">
+            Explore how AugMent is shaping the future of safe and engaging learning for young minds.
+        </p>
+
+        <div class="testimonial-grid">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card">
+                <p>
+                    “AugMent transformed the way my kids engage with immersive AR-based learning. It’s intuitive, safe, and a complete game-changer. It allows them to truly explore the digital learning culture.”
+                </p>
+                <span>- Neha Sharma, Parent & Educator</span>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card">
+                <p>
+                    “I love how easy it is for my students to use AugMent. It makes education more engaging and ensures they retain original and practical lessons.”
+                </p>
+                <span>- Rajiv Menon, School Teacher</span>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card">
+                <p>
+                    “Finally, a platform that combines interactive learning with safe engagement, creating an ideal space where kids can freely express and share with their friends.”
+                </p>
+                <span>- Anjali Verma, Freelance Designer</span>
+            </div>
+
+            <!-- Testimonial 4 -->
+            <div class="testimonial-card">
+                <p>
+                    “As a parent, safety is my priority, but AugMent made it possible to combine safety with an educational focus. It’s a real win-win for parents like me.”
+                </p>
+                <span>- Rohan Desai, Software Engineer</span>
+            </div>
+
+            <!-- Testimonial 5 -->
+            <div class="testimonial-card">
+                <p>
+                    “This platform sets a benchmark for teaching immersive and practical learning. Its intuitive and smooth interface makes it possible for kids to love what they learn.”
+                </p>
+                <span>- Dr. Priya Arora, Child Psychologist</span>
+            </div>
+
+            <!-- Testimonial 6 -->
+            <div class="testimonial-card">
+                <p>
+                    “AugMent is a game-changer for how students and educators build social and collaborative skills. Its analytics tools make it easier to see what’s working and what isn’t.”
+                </p>
+                <span>- Vikram Chauhan, Educational Consultant</span>
+            </div>
+        </div>
+    </div>
+<!-- Join. Create. Thrive. Section -->
+    <div class="join-create-section animate">
+        <div class="join-content">
+            <h2>
+                "Join. <span class="highlight-blue">Create.</span> Thrive."
+            </h2>
+            <p>
+                Become part of an innovative platform, unleash your creativity by creating dynamic AR content, and thrive in a world where learning and interaction are limitless.
+            </p>
+            <button class="btn-primary">Begin my Adventure!</button>
+        </div>
+        <div class="join-images">
+            <!-- <img src="./Images/whale.png" alt="Whale" class="whale-image"> -->
+            <img src="./Images/join.png" alt="Boy with tablet" class="boy-image">
+        </div>
+    </div>
+
+    <!-- Download. Discover. Share. Section -->
+    <div class="download-section animate">
+        <div class="download-content">
+            <img src="./Images/Group 1000002830.png" alt="AR Icons" class="ar-icons">
+            <h2>
+                <span class="highlight-yellow">"Download.</span> Discover. <span class="highlight-yellow">Share.</span>"
+            </h2>
+            <p>
+                Install the AugMEnt app and discover a world of immersive AR content designed to engage and inspire. Share your creations and experiences with friends, and be part of an exciting community where learning and fun come together.
+            </p>
+            <div class="app-buttons">
+                <button class="btn-secondary"><img src="./Images/Android Icon.png"> Android App</button>
+                <button class="btn-secondary"> <img src="./Images/Apple Icon.png" > iOS App</button>
+            </div>
+        </div>
+        <div class="download-image">
+            <img src="./Images/download.png" alt="Boy using AR">
+        </div>
+    </div>
+
+    <!-- FAQs Section -->
+    <div id="faq-section" class="faq-section animate">
+        <div class="faq-container">
+          <div class="faq-left">
+            <h2 class="faq-title">FAQs:<br>Your Guide to AugMent</h2>
+            <p class="faq-description">
+              Get detailed answers to frequently asked questions about AugMent and learn why it’s the ultimate AR app for creativity, education, and social connections.
+            </p>
+          </div>
+          <div class="faq-right">
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>How does AugMent keep the app safe for kids?</span>
+                <span>+</span>
+              </div>
+              <div class="faq-answer">
+                The app uses advanced moderation tools and strict policies to ensure all content is appropriate and the environment is secure for young users.
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>What type of content can kids explore on AugMent?</span>
+                <span>+</span>
+              </div>
+              <div class="faq-answer">
+                Kids can explore AR-based educational games, creative projects, and collaborative activities.
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>Do I need technical skills to use the AugMent app?</span>
+                <span>+</span>
+              </div>
+              <div class="faq-answer">
+                No technical skills are required. The app is designed for an intuitive user experience.
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>Can parents monitor their child’s activity on the app?</span>
+                <span>+</span>
+              </div>
+              <div class="faq-answer">
+                Yes, parents have access to activity logs and monitoring features for their child's usage.
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>How is AugMent different from other apps for kids?</span>
+                <span>+</span>
+              </div>
+              <div class="faq-answer">
+                AugMent combines AR technology with creative, educational, and social features, making it unique and engaging.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="contact-section animate">
+        <div class="contact-content">
+          <h2>How can we help you <span class="highlight">today?</span></h2>
+          <p>Whether you have a question, need assistance, or want to explore our features, we're here to provide support and make your experience seamless. Let us know how we can assist!</p>
+          <button class="btn-contact">Contact Us <span class="arrow">→</span></button>
+        </div>
+        <div class="contact-image">
+          <img src="./Images/phonemockup.png" alt="Phone Mockup"> 
+        </div>
+      </div>
+    
+      <footer class="bg-dark text-white py-4 animate">
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <!-- Left Section -->
+            <div class="col-md-6 text-center text-md-start">
+              <img src="./Images/AKR GAMING STUDIO PNG 2.png" alt="AKR Gaming Studio Logo" class="img-fluid mb-3" style="height: 50px;">
+              <div class="mb-3">
+                <a href="#" class="text-white text-decoration-none me-2">About</a> |
+                <a href="#" class="text-white text-decoration-none mx-2">Features</a> |
+                <a href="#" class="text-white text-decoration-none ms-2">FAQ's</a>
+              </div>
+              <div class="mb-3">
+                <a href="#" class="text-white me-3 fs-5"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white me-3 fs-5"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-white me-3 fs-5"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-white fs-5"><i class="fab fa-twitter"></i></a>
+              </div>
+              <p class="mb-0">&copy; 2024 AKR Gaming Studio. All rights reserved.</p>
+            </div>
+            <!-- Right Section -->
+            <div class="col-md-6">
+              <div class="text-center">
+                <h3 class="h5 mb-3">Stay in Touch</h3>
+                <form class="d-flex justify-content-center mb-3">
+                  <input type="email" class="form-control w-50 rounded-0 rounded-start" placeholder="Enter your Email">
+                  <button type="submit" class="btn btn-primary rounded-0 rounded-end">Subscribe</button>
+                </form>
+                <div class="mb-3">
+                  <a href="#" class="text-white text-decoration-none me-3">Privacy Policy</a> |
+                  <a href="#" class="text-white text-decoration-none mx-3">Terms & Conditions</a> |
+                  <a href="#" class="text-white text-decoration-none mx-3">Legal</a> |
+                  <a href="#" class="text-white text-decoration-none ms-3">Site Map</a>
+                </div>
+                <div>
+                  <span class="text-white">India</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+      
+    <script>
+        const video = document.getElementById('background-video');
+        const muteButton = document.getElementById('mute-btn');
+
+        muteButton.addEventListener('click', () => {
+            if (video.muted) {
+                video.muted = false;
+                muteButton.textContent = 'Mute';
+            } else {
+                video.muted = true;
+                muteButton.textContent = 'Unmute';
+            }
+        });
+    </script>
+
+<script>
+const swiper = new Swiper('.swiper-container', {
+    loop: true,
+    slidesPerView: 1,
+    centeredSlides: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+});
+function toggleMenu() {
+    const links = document.querySelector('.navbar .links');
+    links.classList.toggle('show');
+}
+
+  </script>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+  const faqItems = document.querySelectorAll(".faq-item");
+
+  faqItems.forEach((item) => {
+    const question = item.querySelector(".faq-question");
+
+    question.addEventListener("click", () => {
+      item.classList.toggle("open"); // Toggle 'open' class
+    });
+  });
+});
+
+  </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function (event) {
+                const href = this.getAttribute('href');
+                
+                // If the link points to a different page, allow default behavior
+                if (!href.startsWith('#') && !href.includes(window.location.pathname)) {
+                    return;
+                }
+
+                event.preventDefault(); // Prevent default navigation
+
+                // Extract the target ID
+                const targetId = href.split('#')[1];
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 70, // Adjust for fixed navbar height
+                        behavior: 'smooth'
+                    });
+                } else {
+                    // For cross-page navigation, load the new page
+                    window.location.href = href;
+                }
+            });
+        });
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const elements = document.querySelectorAll('.animate');
+    
+        const handleScroll = () => {
+            elements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+    
+                if (isVisible) {
+                    el.classList.add('visible');
+                }
+            });
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+        handleScroll(); // Trigger on load in case elements are already in view
+    });
+    </script>
+    
+</body>
+</html>

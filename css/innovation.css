@@ -1,0 +1,114 @@
+/* Main Section Styling */
+.innovation-section {
+    text-align: center;
+    padding: 60px 20px;
+    position: relative; /* Ensures child elements (like the additional image) are positioned relative to this section */
+    background: linear-gradient(to right, #480A5E 0%, #1F5BEA 100%);
+    color: #FFFFFF; /* White text for contrast */
+    overflow: hidden; /* Prevents extra space caused by absolutely positioned elements */
+}
+
+/* Heading Styling */
+.innovation-section h2 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+    line-height: 1.3;
+}
+
+.innovation-section .highlight {
+    color: #ffe455; /* Gold color for highlighting key text */
+}
+
+/* Section Description Styling */
+.innovation-section .description {
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.8); /* Slightly transparent white for a subtle effect */
+}
+
+/* Features Container */
+.features-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 25px; /* Adds space between feature cards */
+}
+
+/* Feature Box Styling */
+.feature-box {
+    background: rgba(48, 63, 159, 0.9); /* Semi-transparent blue */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle white border */
+    border-radius: 15px; /* Smooth rounded corners */
+    padding: 25px 20px;
+    text-align: center;
+    width: 20%; /* Adjusted width for proper alignment */
+    min-width: 280px; /* Minimum width for smaller screens */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Adds depth with a shadow */
+    position: relative;
+    overflow: hidden;
+    color: #FFFFFF; /* White text inside feature boxes */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Feature Box Hover Effect */
+.feature-box:hover {
+    transform: translateY(-10px); /* Lifts the card slightly on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Darker shadow on hover */
+}
+
+/* Feature Title */
+.feature-box h3 {
+    font-size: 1.5rem;
+    color: #ffe455; /* Gold color for titles */
+    margin-bottom: 20px;
+}
+
+/* Feature Description */
+.feature-box p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9); /* Slightly lighter white for readability */
+    margin-bottom: 20px;
+}
+
+/* Feature Icon */
+.feature-icon {
+    width: 70px; /* Moderate icon size */
+    height: auto;
+    margin-top: 15px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); /* Adds shadow to the icons */
+}
+
+/* Additional Image Styling */
+.additional-image {
+    position: absolute;
+    bottom: -40px; /* Adjusted to ensure the image doesn't affect the layout */
+    left: 5%; /* Positions the image in the bottom-left corner */
+    width: 150px; /* Size of the additional image */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 10; /* Ensures it appears above the background */
+}
+
+/* Responsive Design for Mobile Screens */
+@media (max-width: 768px) {
+    .features-container {
+        flex-direction: column; /* Stacks feature boxes vertically */
+        align-items: center;
+    }
+
+    .feature-box {
+        width: 90%; /* Full-width cards for smaller screens */
+    }
+
+    .additional-image {
+        width: 120px; /* Smaller image for mobile */
+        bottom: -20px; /* Adjust position for mobile */
+        left: 15%; /* Centers the image */
+        transform: translateX(-50%); /* Ensures the image remains centered */
+    }
+}

@@ -1,0 +1,52 @@
+.immersive-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Align text towards the bottom */
+  height: 60vh;
+  background: linear-gradient(180deg, #1c1c86, #4c1787);
+  color: white;
+  text-align: center;
+  padding-bottom: 8rem; /* Add padding to control the distance from the bottom */
+}
+
+.immersive-section .banner h1 {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin: 0; /* Ensure proper spacing */
+}
+
+.immersive-section .banner span {
+  color: #ffd700; /* Gold color for emphasis */
+  font-weight: bold;
+}
+
+.content {
+  padding: 2rem;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .immersive-section {
+    height: auto; /* Allow the height to adjust naturally for smaller screens */
+    padding-bottom: 4rem; /* Reduce padding */
+    align-items: center; /* Center-align the content vertically */
+    padding: 2rem; /* Add padding for spacing */
+    height: 60vh;
+  }
+
+  .immersive-section .banner h1 {
+    font-size: 1.5rem; /* Reduce font size for smaller screens */
+    line-height: 1.4; /* Adjust line height for readability */
+  }
+
+  .immersive-section .banner span {
+    font-size: 1.2rem; /* Adjust span size */
+  }
+
+  .content {
+    padding: 1.5rem; /* Reduce padding for better fit on mobile */
+    font-size: 0.9rem; /* Adjust font size for readability */
+  }
+}

@@ -1,0 +1,68 @@
+.engaged-with {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.engaged-with .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px; /* Add padding for better spacing on mobile */
+}
+
+.engaged-with .title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2a2a8c; /* Blue text color */
+  margin-bottom: 10px;
+}
+
+.engaged-with .description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+.engaged-with .boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.engaged-with .box {
+  width: 150px;
+  height: 100px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .engaged-with .title {
+      font-size: 24px; /* Slightly smaller title for mobile */
+      margin-bottom: 15px;
+  }
+
+  .engaged-with .description {
+      font-size: 14px; /* Adjust text size for readability */
+      margin-bottom: 30px;
+      line-height: 1.4;
+  }
+
+  .engaged-with .boxes {
+      grid-template-columns: 1fr; /* Single column layout for mobile */
+      gap: 15px; /* Reduce gap between boxes */
+  }
+
+  .engaged-with .box {
+      width: 100%; /* Full width for smaller screens */
+      max-width: 300px; /* Ensure a reasonable size for mobile */
+      height: auto; /* Allow dynamic height */
+      padding: 20px; /* Add padding inside the boxes */
+      box-sizing: border-box; /* Include padding in box size */
+  }
+}

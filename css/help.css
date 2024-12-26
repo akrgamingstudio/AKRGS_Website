@@ -1,0 +1,74 @@
+.help-section {
+    background: linear-gradient(to right, #480A5E 0%, #1F5BEA 100%);
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.help-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px; /* Add padding for better spacing on mobile */
+}
+
+.help-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffd600; /* Yellow Title */
+    margin-bottom: 20px;
+}
+
+.help-description {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.help-button {
+    display: inline-block;
+    background: #ffd600; /* Yellow Button */
+    color: #000;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.help-button:hover {
+    background: #e5c100; /* Slightly darker yellow on hover */
+    transform: translateY(-3px);
+}
+
+.help-button .arrow {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .help-section {
+        padding: 30px 15px; /* Reduce padding for smaller screens */
+    }
+
+    .help-title {
+        font-size: 24px; /* Adjust title size for mobile */
+        margin-bottom: 15px;
+    }
+
+    .help-description {
+        font-size: 14px; /* Slightly smaller text for better readability */
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .help-button {
+        font-size: 14px; /* Adjust button size */
+        padding: 8px 15px; /* Smaller padding for mobile */
+    }
+
+    .help-button .arrow {
+        font-size: 16px; /* Adjust arrow size */
+    }
+}

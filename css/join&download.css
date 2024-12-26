@@ -1,0 +1,189 @@
+/* Global Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Join. Create. Thrive. Section */
+.join-create-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 40px;
+    background-color: #ffffff; /* White background */
+    gap: 20px;
+    max-width: 1450px;
+}
+
+.join-content {
+    width: 50%;
+}
+
+.join-content h2 {
+    font-size: 2.5rem;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.join-content .highlight-blue {
+    color: #2a55d8; /* Blue highlight */
+}
+
+.join-content p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #2a55d8; /* Blue button */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #1f3fa0; /* Darker blue on hover */
+}
+
+.join-image {
+    width: 45%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.join-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.whale-img {
+    position: absolute;
+    bottom: -100px; /* Moves the globe below the layout */
+    left: 10px; /* Aligns it to the right */
+    z-index: 1;
+}
+
+.whale-img img {
+    width: 200px;
+    height: auto;
+    opacity: 0.9; /* Slight transparency for a subtle effect */
+}
+/* Download. Discover. Share. Section */
+.download-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 40px;
+    background: linear-gradient(to right, #480A5E 0%, #1F5BEA 100%);
+    color: #ffffff; /* White text */
+    gap: 20px;
+    
+}
+
+.download-content {
+    width: 50%;
+}
+
+.download-content h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.download-content .subheading {
+    display: block;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.8); /* Slightly lighter white */
+    margin-top: 5px;
+}
+
+.download-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.download-content .highlight-yellow {
+    color: #ffe455; /* Yellow highlight */
+}
+
+.download-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 20px;
+}
+
+.app-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-secondary {
+    background-color: transparent; /* Light button */
+    color: white; /* Dark blue text */
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #ffe455; /* Yellow on hover */
+    color: #162b6e; /* Dark blue text */
+}
+
+.download-image {
+    width: 45%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.download-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    right: 30%;
+
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .join-create-section,
+    .download-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .join-content,
+    .download-content {
+        width: 100%;
+    }
+
+    .join-image,
+    .download-image {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .app-buttons {
+        flex-direction: column;
+    }
+
+    .btn-secondary {
+        width: 100%;
+        text-align: center;
+    }
+}

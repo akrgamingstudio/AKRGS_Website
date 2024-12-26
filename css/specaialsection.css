@@ -1,0 +1,126 @@
+/* General Section Styling */
+.special-section {
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(to right, #480A5E, #1F5BEA);
+    color: #fff;
+    position: relative; /* Ensures the child absolute element stays inside */
+    overflow: hidden; /* Prevents the image from spilling outside */
+}
+
+.special-section h2 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.special-section h2 span {
+    color: #ffa500;
+}
+
+.special-section p {
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    line-height: 1.5;
+}
+
+/* Features Container */
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Feature Box Styling */
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid #ffa500;
+    border-radius: 15px;
+    padding: 20px;
+    gap: 20px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.6);
+}
+
+/* Text Content */
+.text-content {
+    max-width: 60%;
+    text-align: left;
+}
+
+.text-content h3 {
+    color: #ffa500;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Image Styling */
+/* Image Styling */
+.feature img {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    border: none; /* Remove borders */
+    box-shadow: none; /* Remove any shadows */
+    transition: transform 0.3s ease;
+}
+
+.feature img:hover {
+    transform: scale(2.1);
+}
+
+/* Taj Mahal Image Styling */
+.tajmahal-img {
+    position: absolute;
+    bottom: -110px;
+    left: 0;
+    width: 420px; /* Adjust width as needed */
+    height: 421px;
+    z-index: 1; /* Ensures it stays behind other content */
+}
+
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .feature {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .text-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .feature img {
+        width: 120px;
+    }
+
+    /* Taj Mahal Image Styling */
+.tajmahal-img {
+    position: absolute;
+    bottom: -52px;
+    left: 0;
+    width: 180px; /* Adjust width as needed */
+    height: 200px;
+    z-index: 1; /* Ensures it stays behind other content */
+}
+}

@@ -1,0 +1,70 @@
+.our-story {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.text-container {
+  flex: 1 1 50%; /* Maintain 50% width for desktop */
+  max-width: 600px;
+}
+
+.text-container h2 {
+  color: #2c59d8; /* Blue color for the heading */
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.text-container p {
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.image-container {
+  flex: 1 1 40%; /* Maintain 40% width for desktop */
+  max-width: 400px;
+}
+
+.image-container img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .our-story {
+    flex-direction: column; /* Stack items vertically on mobile */
+    align-items: flex-start; /* Align items to the start */
+    gap: 1rem; /* Reduce gap for smaller screens */
+  }
+
+  .text-container {
+    flex: 1 1 100%; /* Full width on mobile */
+    max-width: 100%; /* Ensure it uses full available width */
+    text-align: center; /* Center align text */
+  }
+
+  .text-container h2 {
+    font-size: 1.5rem; /* Adjust heading font size for mobile */
+  }
+
+  .text-container p {
+    font-size: 1rem; /* Adjust paragraph font size for mobile */
+  }
+
+  .image-container {
+    flex: 1 1 100%; /* Full width for images on mobile */
+    max-width: 100%; /* Ensure it uses full available width */
+  }
+
+  .image-container img {
+    border-radius: 5px; /* Slightly smaller border radius */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjust shadow for smaller screens */
+  }
+}
